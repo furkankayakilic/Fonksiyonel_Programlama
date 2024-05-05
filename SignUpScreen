@@ -1,0 +1,37 @@
+import React from "react";
+import {
+    View,
+    Text,
+    TouchableOpacity,
+    TouchableWithoutFeedback,
+    Image,
+    TextInput,
+    Modal,
+    FlatList,
+    KeyboardAvoidingView,
+    ScrollView,
+    Platform
+} from "react-native"
+import { LinearGradient } from 'expo-linear-gradient'
+
+import { COLORS, SIZES, FONTS, icons, images } from "../constants"
+
+const SignUp = ({ navigation }) => {
+
+    const [showPassword, setShowPassword] = React.useState(false)
+
+    const [areas, setAreas] = React.useState([])
+    const [selectedArea, setSelectedArea] = React.useState(null)
+    const [modalVisible, setModalVisible] = React.useState(false)
+}
+function renderHeader() {
+        return (
+            <TouchableOpacity
+                style={{
+                    flexDirection: 'row',
+                    alignItems: "center",
+                    marginTop: SIZES.padding * 6,
+                    paddingHorizontal: SIZES.padding * 2
+                }}
+                onPress={() => console.log("Sign Up")}
+     
