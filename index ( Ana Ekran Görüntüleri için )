@@ -1,0 +1,88 @@
+export const carousalData = [
+  {
+    id: 1,
+    imgUrl: require("../../assets/images/yapıkredi.png"),
+    price: "253,50₺",
+    cardType: "YapıKredi",
+    cardNumber: "****1234",
+    backgroundColor: "#0f60d6",
+    textColor: "white",
+  },
+  {
+    id: 3,
+    imgUrl: require("../../assets/images/garanti.png"),
+    price: "175₺",
+    cardType: "Garanti",
+    cardNumber: "****9876",
+    backgroundColor: "#55a630",
+    textColor: "white",
+  },
+  {
+    id: 4,
+    imgUrl: require("../../assets/images/akbank.png"),
+    price: "2,500₺",
+    cardType: "Akbank",
+    cardNumber: "****5432",
+    backgroundColor: "red",
+    textColor: "#ea468e",
+  },
+  {
+    id: 5,
+    imgUrl: require("../../assets/images/paypal.png"),
+    price: "0,00₺",
+    cardType: "PayPal",
+    cardNumber: "****2468",
+    backgroundColor: "purple",
+    textColor: "white",
+  },
+  
+  // Daha fazla item eklemek isterseniz buraya ekleyebilirsiniz.
+];
+
+export const transactionData = [
+  {
+    id: 1,
+    name: "Netflix",
+    type: "Üyelik",
+    amount: "99.00₺",
+    date: "21 Aralık",
+    imageSource: require("../../assets/images/netflix.png"),
+  },
+  {
+    id: 2,
+    name: "Amazon",
+    type: "Üyelik",
+    amount: "12.99₺",
+    date: "17 Aralık",
+    imageSource: require("../../assets/images/amazon.png"),
+  },
+  {
+    id: 3,
+    name: "Spotify",
+    type: "Üyelik",
+    amount: "9.99₺",
+    date: "15 Aralık",
+    imageSource: require("../../assets/images/spotify.png"),
+  },
+  {
+    id: 4,
+    name: "YouTube",
+    type: "Üyelik",
+    amount: "11.99₺",
+    date: "25 Aralık",
+    imageSource: require("../../assets/images/youtube.png"),
+  },
+  {
+    id: 5,
+    name: "Apple Music",
+    type: "Üyelik",
+    amount: "14.99₺",
+    date: "31 Aralık",
+    imageSource: require("../../assets/images/apple.png"),
+  },
+];
+
+carousalData.forEach((item) => {
+  item.price = item.price.toLocaleString("tr-US", {
+  });
+});
